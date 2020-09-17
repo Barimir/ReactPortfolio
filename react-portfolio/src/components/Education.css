@@ -1,0 +1,29 @@
+.education {
+  padding: 4rem;
+  background: white;
+}
+
+.education-info {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 20px;
+  transition: transform 0.2s; /* Animation */
+}
+
+.education-info:hover {
+  transform: scale(1.1); /* zoom the text */
+}
+
+.education-item-heading {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.education-item-institution {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.education-item-location {
+  color: rgba(0, 0, 0, 0.7);
+}

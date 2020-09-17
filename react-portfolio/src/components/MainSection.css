@@ -1,0 +1,79 @@
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 140%;
+  position: fixed; /* stays in one place*/
+  z-index: -1; /* to prevent it from covering other objects*/
+
+  /* Make the background video appear blurry */
+  -o-filter: blur(2px);
+  filter: blur(2px);
+  object-fit: cover;
+  transform: scale(1.04);
+}
+
+.main-container {
+  height: 100vh; /* cover the size of the screen */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); /* shadow background for main container to make visible nav bar */
+  object-fit: contain;
+}
+
+.main-container > h1 {
+  color: white;
+  font-size: 100px;
+  margin-top: -100px;
+}
+
+.main-container > p {
+  margin-top: 8px;
+  color: white;
+  font-size: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.main-btn {
+  margin-top: 32px;
+}
+
+.main-btn .btn {
+  margin: 6px;
+}
+
+.large-btn {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  padding: 15px 25px;
+  border: 1px solid #ff6961;
+  transition: all 0.3s ease-out;
+}
+
+.large-btn:hover {
+  background: #ff6961;
+  color: white;
+  transition: all 0.3s ease-out;
+}
+
+/* Next section deals with different screen sizes */
+@media screen and (max-width: 960px) {
+  .main-container > h1 {
+    font-size: 70px;
+    margin-top: -150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-container > h1 {
+    font-size: 45px;
+    margin-top: -100px; /* dsitance from the top of the main section */
+  }
+
+  .main-container > p {
+    font-size: 20px;
+  }
+}
